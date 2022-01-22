@@ -92,7 +92,9 @@ return (
     }}
    />
    <Navigation />
+   <div class="jumbotron vertical-center">
    <About />
+   </div>
    <Footer />
   </main>
   );
