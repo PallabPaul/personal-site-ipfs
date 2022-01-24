@@ -23,7 +23,6 @@ h1 {
   position: relative;
   color: #00ff00;
   font-family: courier new;
-  padding-right: 50px;
 }
 
 img {
@@ -40,15 +39,40 @@ img {
 }
 
 #padded-row {
-  padding-top: 25px;
+  padding-top: 40px;
+}
+
+#padded-col {
+  padding-top: 80px;
+  padding-left: 175px;
 }
 
 .vertical-center {
-  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
-  min-height: 100vh; /* These two lines are counted as one :-)       */
+  min-height: 100%;
+  min-height: 100vh;
 
   display: flex;
   align-items: center;
+}
+
+a.linkedin {
+  color: #0e76a8;
+}
+
+a.github {
+  color: white;
+}
+
+a.twitter {
+  color: #1da1f2;
+}
+
+a.youtube {
+  color: #eb3223;
+}
+
+a.gmail {
+  color: #4285F4
 }
 
 /* style={{display: 'flex', justifyContent:'center', alignItems:'center', height: deviceHeight-100, width: deviceWidth-50}} */
