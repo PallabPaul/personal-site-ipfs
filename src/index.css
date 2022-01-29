@@ -47,6 +47,11 @@ img {
   padding-left: 175px;
 }
 
+#padded-col-mobile {
+  padding-top: 0px;
+  padding-left: 0px;
+}
+
 .vertical-center {
   min-height: 100%;
   min-height: 100vh;

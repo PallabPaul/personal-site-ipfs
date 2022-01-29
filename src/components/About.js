@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import Typist from "react-typist";
 import profilepic from "./images/profilepic.png"
 
@@ -16,12 +16,21 @@ import {
     faGoogle
 } from "@fortawesome/free-brands-svg-icons";
 
-
 export default function About() {
+
+    const [isMobile, setIsMobile] = useState(window.innerWidth < 1000);
+
+    useEffect(() => {
+        window.addEventListener("resize", () => {
+            const ismobile = window.innerWidth < 1000;
+            if (ismobile !== isMobile) setIsMobile(ismobile);
+        }, false);
+    }, [isMobile]);
+
     return (
         <Container>
             <Row>
-                <Col align="center" id="padded-col">
+                <Col align="center" id={`${isMobile ? "padded-col-mobile" : "padded-col"}`}>
                     <Typist cursor={{ show: false }} startDelay={100}>
                         <h1>Hi, I'm Pallab.</h1>
                         <h1>Software Engineer</h1>
