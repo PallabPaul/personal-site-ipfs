@@ -24,7 +24,7 @@ export default function Navigation() {
     <Navbar.Collapse id="responsive-navbar-nav">
       <Nav className="me-auto">
         <Nav.Link href="#home">Home</Nav.Link>
-        <Nav.Link href="https://drive.google.com/file/d/1AaSfrFuFJKLaAUbCPhv9zlQcuiyffBWc/view" 
+        <Nav.Link href="https://drive.google.com/file/d/1uyuuoSPkVecVZc1ukBWPFYVHoOnU3tJG/view" 
                   target="_blank"
                   rel="noopener noreferrer">
                   Resume
