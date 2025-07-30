@@ -273,6 +273,11 @@ body {
   border-color: #1da1f2;
 }
 
+.youtube-btn:hover {
+  background: linear-gradient(135deg, #ff0000, #cc0000);
+  border-color: #ff0000;
+}
+
 .email-btn:hover {
   background: linear-gradient(135deg, #ea4335, #fbbc05);
   border-color: #ea4335;

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FiDownload, FiGithub, FiLinkedin, FiMail } from 'react-icons/fi';
-import { FaXTwitter } from 'react-icons/fa6';
+import { FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import profilePic from './images/profilepic.png';
 
 const Hero = () => {
@@ -100,12 +100,24 @@ const Hero = () => {
                   variant="outline-light" 
                   size="lg" 
                   className="link-button twitter-btn"
-                  href="https://x.com/pallabpaul" 
+                  href="https://x.com/pallabpaulll" 
                   target="_blank" 
                   rel="noopener noreferrer"
                 >
                   <FaXTwitter className="me-2" />
                   X
+                </Button>
+                
+                <Button 
+                  variant="outline-light" 
+                  size="lg" 
+                  className="link-button youtube-btn"
+                  href="https://youtube.com/@pallabpaulll" 
+                  target="_blank" 
+                  rel="noopener noreferrer"
+                >
+                  <FaYoutube className="me-2" />
+                  YouTube
                 </Button>
                 
                 <Button 
