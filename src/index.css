@@ -1,10 +1,18 @@
+/* Global Reset and Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 code {
@@ -12,72 +20,57 @@ code {
     monospace;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  height: 2.5rem; 
+/* Smooth scroll behavior */
+html {
+  scroll-behavior: smooth;
 }
 
-h1 {
-  position: relative;
-  color: #00ff00;
-  font-family: courier new;
+/* Remove default Bootstrap focus styles and add custom ones */
+.btn:focus,
+.form-control:focus {
+  box-shadow: 0 0 0 0.2rem rgba(99, 102, 241, 0.25);
 }
 
+/* Ensure all images are responsive */
 img {
-  position: relative;
-  height: 200px;
-  width: 200px;
+  max-width: 100%;
+  height: auto;
 }
 
-#wrapper {
-  margin-left:auto;
-  margin-right:auto;
-  width:500px;
-  height:500px;
+/* Custom link styles */
+a {
+  text-decoration: none;
+  transition: all 0.3s ease;
 }
 
-#padded-row {
-  padding-top: 40px;
+a:hover {
+  text-decoration: none;
 }
 
-#padded-col {
-  padding-top: 80px;
-  padding-left: 175px;
+/* Loading animation for better UX */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
-#padded-col-mobile {
-  padding-top: 0px;
-  padding-left: 0px;
+.fade-in {
+  animation: fadeIn 0.6s ease-out;
 }
 
-.vertical-center {
-  min-height: 100%;
-  min-height: 100vh;
-
-  display: flex;
-  align-items: center;
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
 }
-
-a.linkedin {
-  color: #0e76a8;
-}
-
-a.github {
-  color: white;
-}
-
-a.twitter {
-  color: #1da1f2;
-}
-
-a.youtube {
-  color: #eb3223;
-}
-
-a.gmail {
-  color: #4285F4
-}
-
-/* style={{display: 'flex', justifyContent:'center', alignItems:'center', height: deviceHeight-100, width: deviceWidth-50}} */
