@@ -5,7 +5,7 @@ import { FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import profilePic from './images/profilepic.png';
 
 const Hero = () => {
-                  href="https://drive.google.com/file/d/1YpWWwFFgNqedFv1udhHzW1LBMU1K4hwR/view?usp=sharing"
+  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
 
   useEffect(() => {
     const handleMouseMove = (e) => {
@@ -64,7 +64,7 @@ const Hero = () => {
                   variant="outline-light" 
                   size="lg" 
                   className="link-button resume-btn"
-                  href="https://drive.google.com/file/d/1uyuuoSPkVecVZc1ukBWPFYVHoOnU3tJG/view"
+                  href="https://drive.google.com/file/d/1YpWWwFFgNqedFv1udhHzW1LBMU1K4hwR/view?usp=sharing"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
