@@ -5,7 +5,7 @@ import { FaXTwitter, FaYoutube } from 'react-icons/fa6';
 import profilePic from './images/profilepic.png';
 
 const Hero = () => {
-  const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 });
+                  href="https://drive.google.com/file/d/1YpWWwFFgNqedFv1udhHzW1LBMU1K4hwR/view?usp=sharing"
 
   useEffect(() => {
     const handleMouseMove = (e) => {
